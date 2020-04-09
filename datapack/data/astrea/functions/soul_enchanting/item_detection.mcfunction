@@ -1,5 +1,5 @@
 # Soul enchanting
-execute as @e[type=item, nbt={Item:{id:"minecraft:enchanted_book"}}, tag=!inSE] at @s unless entity @s[tag=sInvalid] if entity @e[type=item, nbt={Item:{id:"minecraft:netherite_ingot"}}, distance=..1] run tag @s add sePhase0
+execute as @e[type=item, nbt={Item:{id:"minecraft:enchanted_book"}}, tag=!inSE] at @s unless entity @s[tag=sInvalid] if entity @e[type=item, nbt={Item:{id:"minecraft:diamond"}}, distance=..1] run tag @s add sePhase0
 execute as @e[tag=sePhase0] run tag @s add enchBook
 
 # Soul forging

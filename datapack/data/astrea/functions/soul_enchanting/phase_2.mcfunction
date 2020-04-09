@@ -29,8 +29,8 @@ execute as @e[tag=sEnchCtr] at @s run playsound minecraft:entity.blaze.death amb
 # Allows player to pick the item up
 data merge entity @s {PickupDelay:50s}
 
-# Kills netherite ingot and armor stands
-execute as @s at @s run kill @e[tag=ntrite, distance=..3]
+# Kills diamond and armor stands
+execute as @s at @s run kill @e[tag=diamondSE, distance=..3]
 execute as @s at @s run kill @e[tag=sEnch, distance=..3]
 
 # Removes phase 2 tag

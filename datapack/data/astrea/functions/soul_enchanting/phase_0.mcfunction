@@ -18,10 +18,10 @@ execute as @s at @s if entity @e[tag=sInvalid, distance=..2] run tag @s add sInv
 execute as @s[tag=!sInvalid] at @s if entity @e[tag=sValid, distance=..2] run tag @s add sValid
 
 # Tags the netherite ingot
-execute at @s as @e[type=item, nbt={Item:{id:"minecraft:netherite_ingot"}}, distance=..1] run tag @s add ntrite
+execute at @s as @e[type=item, nbt={Item:{id:"minecraft:diamond"}}, distance=..1] run tag @s add diamondSE
 
 # Adds pickup delay to items not to accidentally pick them up
-execute at @s[tag=sValid, tag=!sInvalid, tag=!soulEnch] as @e[tag=ntrite, distance=..1] run data merge entity @s {PickupDelay:10000s}
+execute at @s[tag=sValid, tag=!sInvalid, tag=!soulEnch] as @e[tag=diamondSE, distance=..1] run data merge entity @s {PickupDelay:10000s}
 data merge entity @s[tag=sValid, tag=!sInvalid, tag=!soulEnch] {PickupDelay:10000s}
 
 # Summons the flame lantern particles armor stands
