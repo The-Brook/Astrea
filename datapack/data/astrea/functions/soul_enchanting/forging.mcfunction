@@ -26,5 +26,5 @@ execute as @s[tag=vXP, tag=!sInvalid] at @s run particle minecraft:soul ~ ~ ~ 0.
 
 # Transfers the enchantments
 execute as @e[tag=sfItem] at @s run function astrea:soul_enchanting/transfer_enchants
-execute as @e[tag=sfItem] at @s run data modify entity @s Item.tag.Enchantments append from entity @e[tag=vXP, tag=!sInvalid, limit=1] Item.tag.StoredEnchantments[]
+execute as @e[tag=sfItem] at @s run data modify entity @s Item.tag.Enchantments append from entity @e[tag=vXP, tag=!sInvalid, limit=1] Item.tag.StoredEnchantments[0]
 execute as @s[tag=vXP, tag=!sInvalid] run kill @s
