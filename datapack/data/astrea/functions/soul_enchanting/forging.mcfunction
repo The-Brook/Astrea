@@ -14,8 +14,8 @@ execute as @s[tag=!sInvalid] at @s if entity @e[tag=sValid, distance=..2] run ta
 execute at @e[tag=!sInvalid] if entity @p[level=30..] run tag @s add vXP
 execute at @e[tag=!sInvalid] if entity @p[gamemode=creative] run tag @s add vXP
 
-# Removes 30 experience levels to the player
-execute at @s[tag=vXP, tag=!sInvalid] as @p run experience add @s -30 levels
+# Removes 5 experience levels to the player
+execute at @s[tag=vXP, tag=!sInvalid] as @p run experience add @s -5 levels
 
 # Plays sounds
 execute as @s[tag=vXP, tag=!sInvalid] at @s run playsound minecraft:block.enchantment_table.use ambient @a ~ ~ ~ 1 1
@@ -25,5 +25,6 @@ execute as @s[tag=vXP, tag=!sInvalid] at @s run particle minecraft:enchant ~ ~1 
 execute as @s[tag=vXP, tag=!sInvalid] at @s run particle minecraft:soul ~ ~ ~ 0.75 0.75 0.75 0 100 normal
 
 # Transfers the enchantments
+execute as @e[tag=sfItem] at @s run function astrea:soul_enchanting/transfer_enchants
 execute as @e[tag=sfItem] at @s run data modify entity @s Item.tag.Enchantments append from entity @e[tag=vXP, tag=!sInvalid, limit=1] Item.tag.StoredEnchantments[]
 execute as @s[tag=vXP, tag=!sInvalid] run kill @s
