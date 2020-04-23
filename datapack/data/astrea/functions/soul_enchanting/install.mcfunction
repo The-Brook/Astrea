@@ -2,4 +2,4 @@
 data modify storage astrea:soul_enchanting enabled set value 1
 
 # Message
-tellraw @s {"color":"yellow","bold":"true","text":"Successfully enabled soul enchanting module"}
+title @s actionbar {"color":"#ffef08","bold":"true","text":"Successfully enabled soul enchanting module"}

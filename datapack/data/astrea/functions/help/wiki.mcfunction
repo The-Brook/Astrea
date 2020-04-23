@@ -1,0 +1,1 @@
+tellraw @s {"text":"Open the wiki","color":"yellow","underlined":"true","clickEvent": {"action":"open_url","value":"https://github.com/The-Brook/Astrea/wiki"}}

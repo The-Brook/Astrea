@@ -5,4 +5,4 @@ tag @e remove invItemF
 data remove storage astrea:invisible_item_frame enabled
 
 # Message
-tellraw @s {"color":"yellow","bold":"true","text":"Successfully disabled anti mob griefing module"}
+title @s actionbar {"color":"#ffef08","bold":"true","text":"Successfully disabled anti mob griefing module"}

@@ -20,10 +20,10 @@ execute as @e[tag=sEnchCtr] at @s if block ~-2 ~ ~2 minecraft:polished_basalt[ax
 execute as @e[tag=sEnchCtr] at @s if block ~2 ~ ~-2 minecraft:polished_basalt[axis=y] run scoreboard players add @s sValidity 1
 execute as @e[tag=sEnchCtr] at @s if block ~-2 ~ ~-2 minecraft:polished_basalt[axis=y] run scoreboard players add @s sValidity 1
 
-execute as @e[tag=sEnchCtr] at @s if block ~2 ~1 ~2 minecraft:soul_fire_lantern[hanging=false] run scoreboard players add @s sValidity 1
-execute as @e[tag=sEnchCtr] at @s if block ~-2 ~1 ~2 minecraft:soul_fire_lantern[hanging=false] run scoreboard players add @s sValidity 1
-execute as @e[tag=sEnchCtr] at @s if block ~2 ~1 ~-2 minecraft:soul_fire_lantern[hanging=false] run scoreboard players add @s sValidity 1
-execute as @e[tag=sEnchCtr] at @s if block ~-2 ~1 ~-2 minecraft:soul_fire_lantern[hanging=false] run scoreboard players add @s sValidity 1
+execute as @e[tag=sEnchCtr] at @s if block ~2 ~1 ~2 minecraft:soul_lantern[hanging=false] run scoreboard players add @s sValidity 1
+execute as @e[tag=sEnchCtr] at @s if block ~-2 ~1 ~2 minecraft:soul_lantern[hanging=false] run scoreboard players add @s sValidity 1
+execute as @e[tag=sEnchCtr] at @s if block ~2 ~1 ~-2 minecraft:soul_lantern[hanging=false] run scoreboard players add @s sValidity 1
+execute as @e[tag=sEnchCtr] at @s if block ~-2 ~1 ~-2 minecraft:soul_lantern[hanging=false] run scoreboard players add @s sValidity 1
 
 # Checks if the addition of all the the scores matches the complete structure
 execute as @e[tag=sEnchCtr] if entity @s[scores={sValidity=17}] run tag @s add sValid

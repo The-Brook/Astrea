@@ -6,4 +6,4 @@ scoreboard objectives remove enchLvl
 scoreboard objectives remove sValidity
 
 # Message
-tellraw @s {"color":"yellow","bold":"true","text":"Successfully disabled soul enchanting module"}
+title @s actionbar {"color":"#ffef08","bold":"true","text":"Successfully disabled soul enchanting module"}

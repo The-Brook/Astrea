@@ -1,1 +1,1 @@
-tellraw @s {"color":"gray","italic":"true","text":"Version 0.0.1 alpha"}
+tellraw @s {"color":"#fff670","italic":"true","text":"Version 0.0.1 alpha"}

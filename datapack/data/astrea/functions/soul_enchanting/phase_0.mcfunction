@@ -39,5 +39,6 @@ execute as @s[tag=sValid, tag=!sInvalid, tag=!soulEnch] at @s align xyz run summ
 # Changes phase tags
 tag @s[tag=sValid, tag=!sInvalid, tag=!soulEnch] add sePhase1
 
-# Kills the armor stands if invalid
+# Kills the armor stands if invalid or no test has been done
 execute as @s[tag=sInvalid, tag=!soulEnch] at @s run kill @e[tag=sEnch, distance=..3]
+execute as @s[tag=!sInvalid, tag=!sValid, tag=!soulEnch] at @s run kill @e[tag=sEnch, distance=..3]

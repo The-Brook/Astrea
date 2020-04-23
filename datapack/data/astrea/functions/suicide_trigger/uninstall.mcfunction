@@ -5,4 +5,4 @@ scoreboard objectives remove suicide
 data remove storage astrea:suicide_trigger enabled
 
 # Message
-tellraw @s {"color":"yellow","bold":"true","text":"Successfully disabled suicide trigger module"}
+title @s actionbar {"color":"#ffef08","bold":"true","text":"Successfully disabled suicide trigger module"}

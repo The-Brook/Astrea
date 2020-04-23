@@ -5,4 +5,4 @@ scoreboard objectives add suicide trigger "Suicide"
 data modify storage astrea:suicide_trigger enabled set value 1
 
 # Message
-tellraw @s {"color":"yellow","bold":"true","text":"Successfully enabled suicide trigger module"}
+title @s actionbar {"color":"#ffef08","bold":"true","text":"Successfully enabled suicide trigger module"}
