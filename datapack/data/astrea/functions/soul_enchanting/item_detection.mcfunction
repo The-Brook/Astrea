@@ -19,5 +19,6 @@ execute as @e[type=item, nbt={Item:{id:"minecraft:netherite_chestplate"}}, tag=!
 execute as @e[type=item, nbt={Item:{id:"minecraft:netherite_leggings"}}, tag=!inSE] at @s unless entity @s[tag=sInvalid] if entity @e[tag=sfBook, distance=..1] run tag @s add sfItem
 execute as @e[type=item, nbt={Item:{id:"minecraft:netherite_boots"}}, tag=!inSE] at @s unless entity @s[tag=sInvalid] if entity @e[tag=sfBook, distance=..1] run tag @s add sfItem
 execute as @e[type=item, nbt={Item:{id:"minecraft:shield"}}, tag=!inSE] at @s unless entity @s[tag=sInvalid] if entity @e[tag=sfBook, distance=..1] run tag @s add sfItem
+execute as @e[type=item, nbt={Item:{id:"minecraft:elytra"}}, tag=!inSE] at @s unless entity @s[tag=sInvalid] if entity @e[tag=sfBook, distance=..1] run tag @s add sfItem
 
 execute as @e[tag=sfBook, tag=!inSE, tag=!sInvalid] at @s if entity @e[tag=sfItem, distance=..1] run tag @s add sfPhase0
