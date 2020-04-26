@@ -25,7 +25,7 @@ execute as @s if entity @s[nbt={Item:{tag:{FirstEnchantment:"minecraft:bane_of_a
 execute as @s if entity @s[nbt={Item:{tag:{FirstEnchantment:"minecraft:knockback"}}}] run data remove entity @s Item.tag.Enchantments[{id:"minecraft:knockback"}]
 execute as @s if entity @s[nbt={Item:{tag:{FirstEnchantment:"minecraft:fire_aspect"}}}] run data remove entity @s Item.tag.Enchantments[{id:"minecraft:fire_aspect"}]
 execute as @s if entity @s[nbt={Item:{tag:{FirstEnchantment:"minecraft:looting"}}}] run data remove entity @s Item.tag.Enchantments[{id:"minecraft:looting"}]
-execute as @s if entity @s[nbt={Item:{tag:{FirstEnchantment:"minecraft:sweeping_edge"}}}] run data remove entity @s Item.tag.Enchantments[{id:"minecraft:sweeping_edge"}]
+execute as @s if entity @s[nbt={Item:{tag:{FirstEnchantment:"minecraft:sweeping"}}}] run data remove entity @s Item.tag.Enchantments[{id:"minecraft:sweeping"}]
 
 execute as @s if entity @s[nbt={Item:{tag:{FirstEnchantment:"minecraft:power"}}}] run data remove entity @s Item.tag.Enchantments[{id:"minecraft:power"}]
 execute as @s if entity @s[nbt={Item:{tag:{FirstEnchantment:"minecraft:punch"}}}] run data remove entity @s Item.tag.Enchantments[{id:"minecraft:punch"}]
