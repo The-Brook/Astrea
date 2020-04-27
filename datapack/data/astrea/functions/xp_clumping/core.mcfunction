@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:experience_orb, limit=1] at @s if entity @e[type=minecraft:experience_orb, tag=!xpClumper, tag=!xpClumped, distance=..5] run function astrea:xp_clumping/clump_orbs
